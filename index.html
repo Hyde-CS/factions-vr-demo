@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factions VR Demo</title>
+<style>
+  /* Reset default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+  }
+
+  /* Side Menu */
+  nav {
+    width: 220px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+  }
+
+  nav h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    background: linear-gradient(to right, purple, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.5s;
+  }
+
+  nav h2:hover {
+    background: linear-gradient(to right, orange, pink);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #9b59b6;
+  }
+
+  /* Content */
+  .content {
+    margin-left: 240px;
+    padding: 40px;
+    flex: 1;
+  }
+
+  .section {
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+
+  h1.section-title {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, purple, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>Factions VR</h2>
+  <a href="#landing">Home</a>
+  <a href="#rules">Rules</a>
+</nav>
+
+<div class="content">
+  <!-- Landing Page Section -->
+  <section id="landing" class="section">
+    <h1 class="section-title">Welcome to Factions VR</h1>
+    <p>Factions VR is a multiplayer voxel sandbox experience in virtual reality. Explore, build, and interact in a constantly evolving world where creativity and community shape the environment.</p>
+    <p>Join players worldwide, build your own cities, follow laws, participate in courts, and witness the world evolve. Factions VR combines active locomotion, voice chat, and persistent builds to create a dynamic social VR experience.</p>
+  </section>
+
+  <!-- Rules Section -->
+  <section id="rules" class="section">
+    <h1 class="section-title">Rules & Laws</h1>
+    <h2>Foundational Laws</h2>
+    <ul>
+      <li>Properly use the buildings as intended</li>
+      <li>No robbing of any property (in spawn)</li>
+      <li>No glitching through walls/floors</li>
+      <li>No targeting</li>
+      <li>No stealing</li>
+      <li>No duping for personal gain (SERVER-WIDE)</li>
+      <li>No hate speech (SERVER-WIDE)</li>
+      <li>Using trickery or fraud in trades (SERVER-WIDE)</li>
+    </ul>
+
+    <h2>Extra Rules for People with Build Perms</h2>
+    <ul>
+      <li>Don't place random blocks</li>
+      <li>Let judges know if your building somewhere</li>
+      <li>Don't use perms to your advantage (trapping people, breaking sealed buildings, etc.)</li>
+      <li>No random killing</li>
+      <li>No destruction of any building without permission</li>
+    </ul>
+
+    <h2>Crime Rankings</h2>
+
+    <h3>Petty Crimes: 1-2 days</h3>
+    <ul>
+      <li>Stealing (depends on degree)</li>
+      <li>Hate speech</li>
+      <li>Targeting</li>
+      <li>Random killing (depends on degree)</li>
+      <li>Using buildings how they're not supposed to be used</li>
+      <li>Don't place random blocks</li>
+    </ul>
+
+    <h3>Misdemeanors: 2-5 days</h3>
+    <ul>
+      <li>Glitching through walls/floors for malicious intent</li>
+      <li>Using trickery or fraud in trades</li>
+      <li>Using build perms for advantage</li>
+    </ul>
+
+    <h3>Felonies: 7-14 days</h3>
+    <ul>
+      <li>Robbing any building in spawn</li>
+      <li>Destroying/griefing spawn buildings without permission</li>
+      <li>No duping</li>
+    </ul>
+  </section>
+</div>
+
+</body>
+</html>
